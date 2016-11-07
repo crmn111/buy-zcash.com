@@ -1,0 +1,294 @@
+<div class="main">
+    <header>
+
+        <div class="layer">
+
+            <div class="logo">
+                <div class="wrap">
+                    <a ui-sref="home" ><img src="/assets/images/logo.png"/></a>
+                </div>
+                <hr/>
+            </div>
+
+            <div class="wrap">
+
+              <!--  <div class="language-switch">
+                    <a class="flag en" ng-click="changeLang('english')"></a>
+                    <a class="flag cn" ng-click="changeLang('chinese')"></a>
+                </div>-->
+
+                <div class="row padding-104">
+
+                    <div class="col-md-6">
+
+                        <h1 translate="HEADER_H1"></h1>
+
+                        <p class="top30" translate="HEADER_P1"></p>
+
+                        <p class="top30" translate="HEADER_P2"></p>
+
+                        <p class="top30" translate="HEADER_P3"></p>
+
+
+                        <!-- <p translate="HEADER_P1" class="top30"></p>-->
+
+
+                    </div>
+
+                    <div class="col-md-6 iframe">
+
+                        <div>
+
+
+                            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
+                                    ng-if="!test"></iframe>
+
+
+                            <!-- <figure class="stars">
+                               <figcaption>Review stars 5/5</figcaption>
+                             </figure>-->
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+
+<section id="trades" class="top100">
+    <div class="wrap">
+        <h2 translate="HEADER_CONVERSIONS" class="section-heading top70"></h2>
+        <div class="trades-container">
+            <iframe ng-src="{{iframe2}}" ng-if="!debug" class="trades-widget top20"></iframe>
+        </div>
+    </div>
+</section>
+
+
+<div class="spanning">
+    <div class="promo top30 clearfix">
+        <div class="wrap">
+            <div class="promo-wrapper clearfix">
+                <div class="promo-column">
+                    <img src="assets/images/pin.png" height="32" width="24" alt="">
+                    <h5 translate="PROMO_HEADER_1"></h5>
+
+                    <p translate="PROMO_TEXT_1"></p>
+                </div>
+                <div class="promo-column">
+                    <img src="assets/images/settings.png" height="32" width="33" alt="">
+                    <h5 translate="PROMO_HEADER_2"></h5>
+
+                    <p translate="PROMO_TEXT_2"></p>
+                </div>
+                <div class="promo-column">
+                    <img src="assets/images/easy.png" height="32" width="34" alt="">
+                    <h5 translate="PROMO_HEADER_3"></h5>
+
+                    <p translate="PROMO_TEXT_3"></p>
+                </div>
+                <div class="promo-column">
+                    <img src="assets/images/saturn.png" height="32" width="32" alt="">
+                    <h5 translate="PROMO_HEADER_4"></h5>
+
+                    <p translate="PROMO_TEXT_4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video top50 clearfix">
+        <div class="wrap">
+            <div class="video-title" translate="VIDEO_HEADER"></div>
+            <div class="video-subtitle" translate="VIDEO_SUB_HEADER"></div>
+            <div class="video-container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--<strong class="text-center" translate="VIDEO_PROBLEM">The problem</strong>-->
+                        <iframe width="100%" height="800" src="https://www.youtube.com/embed/M7CMU5OMEgE" frameborder="0" allowfullscreen ng-if="!test"></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--<div class="wrap small-videos">
+            <div class="row">
+                <div class="col-md-4">
+                    <iframe width="100%" height="195" src="https://www.youtube.com/embed/r7GVVk8v2Ik" frameborder="0"
+                            allowfullscreen ng-if="!test"></iframe>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe width="100%" height="195" src="https://www.youtube.com/embed/Clw-qf1sUZg" frameborder="0"
+                            allowfullscreen ng-if="!test"></iframe>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe width="100%" height="195" src="https://www.youtube.com/embed/fbEtivJIfIU" frameborder="0"
+                            allowfullscreen ng-if="!test"></iframe>
+                </div>
+            </div>
+
+        </div>
+-->
+
+    </div>
+
+
+
+    <div class="discover clearfix top50">
+        <div class="wrap">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div translate="DISCOVER_CONTENT"></div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="comments clearfix">
+        <div class="wrap">
+            <div class="tab">
+                <div class="box visible">
+                    <h4 translate="COMMENTS_TITLE">{{ 'COMMENTS_TITLE' | translate}} {{ 'COMMENTS_LINK' |
+                        translate}}</h4>
+
+                    <p translate="COMMENTS_SUBTITLE"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="simple clearfix">
+        <div class="wrap">
+
+            <div class="row">
+                <div class="col-md-8 simple-content-left">
+                    <h3 translate="NEWS_TITLE"></h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.wired.com/2016/01/zcash-an-untraceable-bitcoin-alternative-launches-in-alpha/"
+                               target="_blank"><i class="fa fa-newspaper-o"></i> Zcash, an Untraceable Bitcoin Alternative, Launches in Alpha - Wired</a>
+                        </li>
+                        <li>
+                            <a href="http://www.coindesk.com/auditing-zcash-anonymous-blockchain-spent-250k-trial-fire/"
+                               target="_blank"><i class="fa fa-newspaper-o"></i> Inside the Zcash Audit: Why the Anonymous Blockchain Project Spent $250k on a Trial By Fire - Coindesk</a>
+                        </li>
+                        <li>
+                            <a href="https://bitcoinmagazine.com/articles/zcash-creator-on-the-upcoming-zcash-launch-privacy-and-the-unfinished-internet-revolution-1472568389"
+                               target="_blank"><i class="fa fa-newspaper-o"></i> Zcash Creator on the Upcoming Zcash Launch, Privacy and the Unfinished Internet Revolution - Bitcoin Magazine</a>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </div>
+
+                <div class="col-md-4 simple-content">
+                    <h3 translate="LEARNMORE_TITLE"></h3>
+                    <ul>
+                        <li class="clearfix">
+                            <a href="https://z.cash/" target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Zcash project site
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="https://forum.z.cash/" target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Zcash forum
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="https://github.com/zcash/zcash" target="_blank">
+                                <i class="fa fa-globe"></i>
+                                Zcash github
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="real-content clearfix">
+        <div class="wrap">
+
+            <div class="row">
+                <!--<div class="col-md-5">
+
+
+
+                </div>-->
+
+                <div class="col-md-12">
+
+                    <h3 translate="REALCONTENT_TITLE"></h3>
+
+                    <p translate="REALCONTENT_P1"></p>
+
+                    <p translate="REALCONTENT_P2"></p>
+
+                    <p translate="REALCONTENT_P3"></p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="newsletter clearfix">
+       <div class="wrap">
+         <div class="newsletter-title">our newsletter</div>
+         <div class="newsletter-form clearfix">
+           <form action="">
+             <input type="email" placeholder="john@doe.com" class="input-text">
+             <input type="button" class="button" value="Subscribe">
+           </form>
+         </div>
+         <p>If you want to recieve monthly updates from us just pop your email in the box. We think that spam is for jerks. And we are no jerks.</p>
+       </div>
+     </div>-->
+</div>
+</div>
+<!-- /.main -->
+<!-- DOWNLOAD BEGIN --><!--
+<section id="download" class="bg-color-main">
+  <div class="container-fluid"> <a href="#wrap" class="goto">
+    <h2><div class="download"><i class="fa fa-apple"></i> Download App</div></h2>
+  </a> </div>
+  <div class="block-bg"></div>
+</section>-->
+<!-- DOWNLOAD END -->
+<footer>
+    <div class="layer">
+        <div class="wrap">
+            <p>&copy; {{ date | date:'yyyy'}}&nbsp;<strong>Buy ZCASH</strong>, All Rights Reserved</p>
+            <!-- <figure class="stars">
+               <figcaption>Review stars 5/5</figcaption>
+             </figure>-->
+        </div>
+    </div>
+</footer>
+
