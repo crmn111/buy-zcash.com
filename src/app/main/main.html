@@ -40,7 +40,7 @@
                         <div>
 
 
-                            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
+                            <iframe ng-src="{{vm.iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
                                     ng-if="!test"></iframe>
 
 
@@ -56,6 +56,9 @@
                 </div>
             </div>
         </div>
+        <div class="ticker-main">
+            <iframe class="ticker-widget" id="ticker" ng-src="{{vm.iframe3}}" class="ticker-widget hidden" ng-if="!test"></iframe>
+        </div>
     </header>
 </div>
 
@@ -64,7 +67,7 @@
     <div class="wrap">
         <h2 translate="HEADER_CONVERSIONS" class="section-heading top70"></h2>
         <div class="trades-container">
-            <iframe ng-src="{{iframe2}}" ng-if="!debug" class="trades-widget top20"></iframe>
+            <iframe ng-src="{{vm.iframe2}}" ng-if="!debug" class="trades-widget top20"></iframe>
         </div>
     </div>
 </section>
